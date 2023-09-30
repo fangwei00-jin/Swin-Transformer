@@ -379,7 +379,7 @@ class BasicLayer(nn.Module):
         norm_layer (nn.Module, optional): Normalization layer. Default: nn.LayerNorm
         downsample (nn.Module | None, optional): Downsample layer at the end of the layer. Default: None
         use_checkpoint (bool): Whether to use checkpointing to save memory. Default: False.
-        fused_window_process (bool, optional): If True, use one kernel to fused window shift & window partition for acceleration, similar for the reversed part. Default: False
+        fused_window_process (bool, optional): If True, use one kernel to fused window shift & window partition for acceleration,  similar for the reversed part. Default: False
     """
 
     def __init__(self, dim, input_resolution, depth, num_heads, window_size,
